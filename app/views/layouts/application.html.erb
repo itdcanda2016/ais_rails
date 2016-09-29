@@ -28,19 +28,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <p><a class="navbar-brand" href="index.html"><%= image_tag 'logo.png', alt: "ITD canada logo" %></a></p>
+          <p><%= link_to image_tag('logo.png', alt: "ITD canada logo"), root_path, class: 'navbar-brand' %></p>
         </div><!--/navbar-header-->
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#new-post">New Posts</a></li>
-            <li><a href="#school-information">About School</a></li>
-            <li><a href="#courses">About Course</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><%= link_to "New Posts", new_post_path %></li>
+            <li><%= link_to "About School", root_path %></li>
+            <li><%= link_to "About Course", root_path %></li>
+            <li><%= link_to "Projects", root_path %></li>
           </ul>
           <div class="navbar-right">
-          <button type="button" class="log-btn btn btn-default navbar-btn">Login in</button>
-          <button type="button" class="sign-btn btn btn-default navbar-btn">Sign in</button>
+          <%= link_to "Log in", new_user_session_path, class: "sign-btn btn btn-default navbar-btn" %>
+          <%= link_to "Sign up", new_user_registration_path, class: "sign-btn btn btn-default navbar-btn" %>
        </div>
         </div><!--/collapse -->
       </div><!--/container-->
@@ -58,9 +58,9 @@
   <div class="container">
     <nav class="fnavi">
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About Us", about_us_path %></li>
+        <li><%= link_to "Contact Us", contact_us_path %></li>
       </ul>
     </nav>
     <small class="copyright text-center">Copyright ITD Students 2016</small>
