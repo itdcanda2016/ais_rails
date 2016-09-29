@@ -13,3 +13,433 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* --------------------------------------------------
+   Common
+-------------------------------------------------- */
+body {
+  background-color: #EEEEF2;
+  overflow-x: hidden;
+  width: 100%;
+  color: #606060;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.wrapper {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  color: #606060;
+}
+a:focus, a:hover {
+    color: #01440f;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 900;
+  color: #606060;
+}
+h2 {
+  color: #606060;
+  margin: 1.5em 0 1em;
+}
+h2:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 2px;
+  margin-bottom: 20px;
+  background-color: #01440f;
+}
+.btn-default {
+    color: #01440f;
+    font-weight: bold;
+    border-color: white;
+    /*background-color: #01440f;
+    border: 1px solid #01440f;*/
+}
+.btn-default:hover {
+    color: #006515;
+    background-color: #fff;
+    border: 1px solid #01440f;
+}
+
+/* --------------------------------------------------
+   Header
+-------------------------------------------------- */
+a.navbar-brand{
+  display: block;
+  padding: 0;
+}
+a.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+/* Navigation */
+.navbar-default {
+  background-color: #fff;
+  padding: 0.85em 0 0.45em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+.navbar-nav li {
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar-nav>li>a {
+  text-align: center;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #01440f;
+}
+.nav .btn {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.nav .btn-default {
+    color: #fff;
+    font-weight: bold;
+    background-color: #01440f;
+    border: none;    
+}
+.nav .btn-default:hover {
+    color: #01440f;
+    background-color: #fff;
+    border: none;
+}
+.sign-btn {
+  margin-left: 20px;
+}
+.navbar-right {
+    margin-right: 0;
+    text-align: center;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+}
+
+/* Main Image */
+.jumbotron {
+  background: radial-gradient(rgba(1,68,15,0.8),rgba(1,68,15,0.8)), url(../img/sample.jpg) center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  weight: 100%;
+  color: #fff;
+  position: relative;
+} 
+.jumbotron p {
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 100; 
+  font-size: 1.4em;
+}
+.position-center {
+  position: absolute;
+  width: 85%;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+
+
+/* --------------------------------------------------
+   New Posts
+-------------------------------------------------- */
+.media {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 0;
+  border-bottom: 1px solid #ccc;
+}
+.media:last-child{
+  border-bottom: 0px;
+}
+.media-body, .media-left, .media-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.post-box {
+  background-color: #fff;
+  padding: 0 2.5em;
+}
+
+.media-object {
+  display: inline-block;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+}
+.media-body h3 {
+  margin-top: 0;
+}
+.media-left {
+  padding-right: 0;
+}
+.pagination>li>a {
+  color: #080808;
+  padding: 10px 20px;
+}
+.pagination>li>a:focus, .pagination>li>a:hover {
+  color: #01440f;
+}
+.center {
+  width: 250px;
+  margin: 0 auto;
+}
+
+
+
+/* --------------------------------------------------
+   School Information
+-------------------------------------------------- */
+#school-information {
+  color: #fff;
+}
+#school-information h3 {
+  color: #fff;
+  margin-top: 0;
+}
+#school-information button {
+  width: 50%;
+  float: right;
+  background-color: #01440f;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0;
+}
+#school-information button:hover {
+  text-decoration: none;
+    background-color: #fff;
+    color: #01440f;
+
+}
+.each-information {
+  width: 100%;
+  background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/sample.jpg) center top no-repeat;
+  background-size: cover;
+  padding: 4em;
+}
+
+
+
+
+/* --------------------------------------------------
+   Courses
+-------------------------------------------------- */
+#courses {
+  background-color: #fff;
+  padding-bottom: 3em;
+}
+.each-course {
+  margin-bottom: 2em;
+}
+.each-course p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+
+/* --------------------------------------------------
+   Your Projects
+-------------------------------------------------- */
+.each-project {
+  margin-bottom: 2em;
+}
+.each-project .description {
+  width: 80%;
+  margin: 0 auto;
+}
+.each-project .title {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin: 0;
+}
+.pager li>a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #01440f;
+    border-radius: 3px;
+    color: #01440f;
+    width: 45%;
+    font-weight: bold;
+}
+.pager li>a:hover {
+    text-decoration: none;
+    background-color: #01440f;
+    color: #fff;
+}
+
+
+
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
+footer {
+  background-color: #252525;
+  padding: 1.8em 0 1em;
+  margin-top: 5em;
+  color: #fff;
+}
+.fnavi {
+    text-align: center;
+}
+.fnavi ul {
+    display: inline-block;
+    padding: 0;
+}
+.fnavi li {
+    float: left;
+    list-style: none;
+  font-size: .8em;
+}
+.fnavi li + li {
+    margin-left: 20px;
+}
+.fnavi li a {
+  color: #fff;
+}
+.fnavi li a:hover {
+  color: #606060;
+  text-decoration: none;
+}
+.copyright {
+  display: block;
+  font-size: 0.6em;
+}
+
+
+
+/* --------------------------------------------------
+   768px and up
+-------------------------------------------------- */
+@media (min-width: 768px) { 
+  h2 {
+    font-size: 3em;
+  }
+  /* Navigation */
+  .navbar-default {
+    background-color: #fff;
+    padding: 0.75em 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+  }
+  .navbar-nav li {
+    border-bottom: none;
+    width: auto;
+    margin: 0 auto;
+  }
+  .navbar-nav li:first-child {
+    margin-left: 50px;
+  }
+  .navbar-nav>li>a {
+    text-align: center;
+    font-weight: bold;
+  }
+  .navbar-default .navbar-nav>li>a:hover {
+    color: #01440f;
+  }
+  .nav .btn {
+    display: inline;
+    width: auto;
+    margin: 8px 0;
+  }
+  .nav .btn-default {
+      color: #006515;
+      background-color: #fff;
+      border: 2px solid #01440f;
+  }
+  .nav .btn-default:hover {
+      color: #fff;
+      background-color: #01440f;
+      border: 2px solid #01440f;
+  }
+  .navbar-nav>li:nth-child(4) {
+    padding-right: 1em;
+  }
+  /* Main Title */
+  .jumbotron {
+    padding: 18em 0 15em;
+
+  }
+  .jumbotron h1 {
+      font-size: 5.8em;
+      letter-spacing: 0.05em;
+  }
+  .jumbotron p {
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 100;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+  }
+  /* --------------------------------------------------
+   New Posts
+-------------------------------------------------- */
+
+.media-left {
+    display: block;
+    width: 10%;
+    text-align: center;
+    float: left;
+
+}
+.media-body {
+  width: 90%;
+  float: right;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.each-information {
+  width: 50%;
+  background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/sample.jpg) center top no-repeat;
+  background-size: cover;
+  padding: 7em 4em 7em -10em;
+  float: left;
+}
+
+
+ }
+
+
+
+/* --------------------------------------------------
+   992px and up
+-------------------------------------------------- */
+ @media (min-width: 992px) { 
+  .pager li>a {
+      width: 30%;
+  }
+  }
+
